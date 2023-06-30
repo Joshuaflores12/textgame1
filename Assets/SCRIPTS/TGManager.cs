@@ -14,7 +14,8 @@ public class TGManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        storyText = "Farmland";
+        Lvl2Choices.SetActive(false);
+        storyText = "The Cave of Avalon was said to be the most\r\ndangerous cave out there, It is filled with\r\ndangerous and powerful mythical creatures";
     }
 
     // Update is called once per frame
@@ -46,34 +47,27 @@ public class TGManager : MonoBehaviour
         Application.Quit();
 
     }
-    public void Plantcrops() //BUTTON 1 
+    public void EntertheCave() //BUTTON 1 
     {
-        storyText = "You have food for your family";
+        storyText = "You encountered a\r\nKing Chimera";
         HPVAL += 2;
 
         Lvl1Choices.SetActive(false); // level 1 buttons will disappear
-        Lvl2Choices.SetActive(false); // shows second choices
+        Lvl2Choices.SetActive(true); // shows second choices
 
 
     }
-    public void Getinside() //BUTTON 2
+    public void Lookforadifferentquest() //BUTTON 2
     {
-        storyText = "Lay down and rest";
+        storyText = "You chose a hunting quest\r\nand proceeds to hunt in the\r\nforest and see the 3 headed\r\ndeer";
         HPVAL += 10;
 
         Lvl1Choices.SetActive(false);
-        Lvl2Choices.SetActive(false); // shows second choices
+        Lvl2Choices.SetActive(true); // shows second choices
     }
-    public void Sleep() //BUTTON3 
-    {
-        storyText = "Slept until midnight";
-        HPVAL -= 10;
-
-        Lvl1Choices.SetActive(false);
-        Lvl2Choices.SetActive(false); // shows second choices
+    
 
     }
 
 
     
-}
