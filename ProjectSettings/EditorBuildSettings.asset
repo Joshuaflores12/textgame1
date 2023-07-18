@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/Emiya'sAdventure.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/LoseScreen.unity
+    guid: 83288565c1bfa2141a85fb11d6b15d62
+  - enabled: 1
+    path: Assets/Scenes/WinScreen.unity
+    guid: 7c1ae451781788043b875c8b96b90a7c
   m_configObjects: {}
